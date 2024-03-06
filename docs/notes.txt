@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "tags": []
+  },
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "vkj9mhiseih4"
+      }
+    },
+    "id": "1mZCWmAeYZaL27gg29Ni1d",
+    "type": "Entry",
+    "createdAt": "2024-03-04T16:20:05.556Z",
+    "updatedAt": "2024-03-04T16:20:05.556Z",
+    "environment": {
+      "sys": {
+        "id": "master",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 1,
+    "contentType": {
+      "sys": {
+        "type": "Link",
+        "linkType": "ContentType",
+        "id": "genericCt"
+      }
+    },
+    "locale": "en-US"
+  },
+  "fields": {
+    "title": "Lorem Ipsum title"
+  }
+}
+
+
+#    Auto Complete:  Ctrl-Space (or just start typing)
+#
+query {
+  genericCtCollection {
+      items{
+        title
+      }
+     
+  }
+    genericCt(id:"1mZCWmAeYZaL27gg29Ni1d"){
+      title
+    }
+ 
+  personCollection(where: {
+    OR: [
+      { name_contains: "eor" },
+      { name: "Geofbrg" }
+    ],
+   })  
+  {items{name}} 
+}
+      
+      
+
+
+
+
+
+Fragen: outlet nötig?
+routes in unterkomponenten best practice
+
+Navlink kliongt etwas umständlich
